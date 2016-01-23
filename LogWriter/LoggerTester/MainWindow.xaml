@@ -1,0 +1,22 @@
+﻿<Window x:Class="LoggerTester.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoggerTester"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <RichTextBox x:Name="logBoxDemo" HorizontalAlignment="Left" Height="299" Margin="10,10,0,0" VerticalAlignment="Top" Width="497">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="This is a custom textbox logger"/>
+                    <Run Text=" demo"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
+</Window>

@@ -316,27 +316,27 @@ namespace LogWriter
                         case LogType.DebugLog:
                             par.Foreground = brushColor ?? DebugBrush;
                             if (logPrependType)
-                                msg = (logTypeString ?? DebugLogType) + msg;
+                                msg = (logTypeString ?? DebugLogType) + " " + msg;
                             break;
                         case LogType.Info:
                             par.Foreground = brushColor ?? InfoBrush;
                             if (logPrependType)
-                                msg = (logTypeString ?? InfoLogType) + msg;
+                                msg = (logTypeString ?? InfoLogType) + " " + msg;
                             break;
                         case LogType.Warning:
                             par.Foreground = brushColor ?? WarningBrush;
                             if (logPrependType)
-                                msg = (logTypeString ?? WarningLogType) + msg;
+                                msg = (logTypeString ?? WarningLogType) + " " + msg;
                             break;
                         case LogType.Error:
                             par.Foreground = brushColor ?? ErrorBrush;
                             if (logPrependType)
-                                msg = (logTypeString ?? ErrorLogType) + msg;
+                                msg = (logTypeString ?? ErrorLogType) + " " + msg;
                             break;
                         case LogType.Custom:
                             par.Foreground = brushColor ?? CustomBrush;
                             if (logPrependType)
-                                msg = (logTypeString ?? CustomLogType) + msg;
+                                msg = (logTypeString ?? CustomLogType) + " " + msg;
                             break;
                     }
                     if (logShowTime)
